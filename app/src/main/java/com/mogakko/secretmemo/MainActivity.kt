@@ -1,5 +1,6 @@
 package com.mogakko.secretmemo
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
@@ -22,6 +23,9 @@ class MainActivity : BaseActivity() {
             val password = binding.edtInputPassword.text.toString()
             if (email == "koolunkle@test.com") {
                 if (password == "koolunkle") {
+                    val myIntent = Intent(mContext, MemoActivity::class.java)
+                    startActivity(myIntent)
+                    finish()
                     Toast.makeText(mContext, "로그인 성공", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(mContext, "로그인 실패: 비밀번호 오류", Toast.LENGTH_SHORT).show()
