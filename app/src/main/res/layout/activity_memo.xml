@@ -19,7 +19,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
+        <com.mogakko.secretmemo.CustomEditText
             android:id="@+id/edtInputMemo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
