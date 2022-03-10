@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SecretMemo">
         <activity
+            android:name=".MemoActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustUnspecified">
